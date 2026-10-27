@@ -42,7 +42,7 @@
     }
     h1 { font-size: 1.35rem; margin: 0; font-weight: 650; }
     header p { margin: 2px 0 0; color: var(--muted); font-size: 0.92rem; }
-    main { width: min(1100px, 92vw); margin: 0 auto; padding: 42px 0 72px; }
+    main { width: min(1100px, 92vw); margin: 0 auto; padding: 42px 0 28px; }
     .lead { max-width: 46rem; color: var(--muted); font-size: 1.05rem; line-height: 1.55; }
     .lead strong { color: var(--text); font-weight: 650; }
     .grid {
@@ -67,15 +67,16 @@
     figcaption ul { margin: 10px 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
     figcaption li { margin: 4px 0; }
     footer {
-      margin-top: 48px;
-      padding: 22px 7vw 28px;
+      margin: 0;
+      padding: 28px 7vw 36px;
       border-top: 1px solid var(--line);
-      color: var(--muted);
+      background: #120e18;
+      color: var(--text);
       text-align: center;
-      font-size: 0.92rem;
+      font-size: 1rem;
       line-height: 1.55;
     }
-    footer .heart { color: #ff6b8a; }
+    footer .heart { color: #ff6b8a; font-size: 1.15rem; }
     @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -143,7 +144,8 @@
     </div>
   </main>
   <footer>
-    <p>© The Sims 4 Mod Launcher made with <span class="heart">♥</span> by Martinnes and Dr.Berg. Designed by Dr.Berg and Martin Berg.</p>
+    <p>© The Sims 4 Mod Launcher made with <span class="heart">♥</span> by Martinnes and Dr.Berg</p>
+    <p>Designed by Dr.Berg and Martin Berg</p>
   </footer>
 </body>
 </html>
