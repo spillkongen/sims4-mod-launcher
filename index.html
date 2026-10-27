@@ -61,9 +61,11 @@
     }
     figure:first-child { border-color: rgba(198, 245, 78, 0.55); }
     img { display: block; width: 100%; height: auto; }
-    figcaption { padding: 14px 16px 16px; }
-    figcaption strong { display: block; margin-bottom: 4px; }
-    figcaption span { color: var(--muted); font-size: 0.92rem; line-height: 1.4; }
+    figcaption { padding: 16px 18px 18px; }
+    figcaption strong { display: block; margin-bottom: 6px; font-size: 1.05rem; }
+    figcaption span { color: var(--muted); font-size: 0.94rem; line-height: 1.45; }
+    figcaption ul { margin: 10px 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
+    figcaption li { margin: 4px 0; }
     @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -82,28 +84,50 @@
         <img src="images/play.jpg" alt="Play screen with Steam and EA App launch choices">
         <figcaption>
           <strong>Play</strong>
-          <span>Launch the Steam install or the EA App. Game updates can be blocked, and the gallery stays online.</span>
+          <span>Start The Sims 4 from this app, with Steam or the EA App.</span>
+          <ul>
+            <li>Always launches with -augments.</li>
+            <li>Block game updates while the gallery and community stay online.</li>
+            <li>Shows the install path that will be used.</li>
+          </ul>
         </figcaption>
       </figure>
       <figure>
         <img src="images/mods.jpg" alt="Mod Manager showing installed Sims 4 character and clothing mods">
         <figcaption>
           <strong>Mod Manager</strong>
-          <span>See installed packages, turn a mod off, or remove it. A disabled mod moves into the Disabled folder.</span>
+          <span>See every installed package and script, with pictures of the Sims 4 characters and clothes.</span>
+          <ul>
+            <li>The switch moves a mod into the Disabled folder next to Mods.</li>
+            <li>Drop .package, .ts4script, or .zip files here to install them.</li>
+            <li>Filter All, Packages, Scripts, Disabled, or Conflicts, then open the folder.</li>
+            <li>Click a picture to look the mod up on CurseForge.</li>
+          </ul>
         </figcaption>
       </figure>
       <figure>
         <img src="images/curseforge.jpg" alt="CurseForge search results for Sims 4 hair and clothing mods">
         <figcaption>
-          <strong>CurseForge</strong>
-          <span>Search The Sims 4 mods, open the description, and download the file from CurseForge into the Mods folder.</span>
+          <strong>CurseForge Mod downloader</strong>
+          <span>Search CurseForge for The Sims 4 mods and install them into the player's own Mods folder.</span>
+          <ul>
+            <li>Click a picture to open the description, gallery, and files.</li>
+            <li>The file is downloaded from CurseForge. The app does not rehost or share it.</li>
+            <li>The API key stays hidden. Users never see it, and it is not shown in Settings.</li>
+          </ul>
         </figcaption>
       </figure>
       <figure>
         <img src="images/settings.png" alt="Settings for launch path, update lock, and the Mods and Disabled folders">
         <figcaption>
           <strong>Settings</strong>
-          <span>Choose Steam or the EA App, block auto-updates, and set the Mods folder. Disabled mods stay in the folder beside it.</span>
+          <span>Set the launch path, the update lock, and the folders the app uses.</span>
+          <ul>
+            <li>Launch through Steam or the EA App. -augments is always written.</li>
+            <li>Block Steam / EA auto-updates.</li>
+            <li>Start with Windows and stay in the tray.</li>
+            <li>Choose the Mods folder. The Disabled mods folder is created next to it automatically.</li>
+          </ul>
         </figcaption>
       </figure>
     </div>
